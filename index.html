@@ -45,6 +45,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      cursor: pointer; /* Adding pointer cursor on hover */
+      text-decoration: none; /* Remove underline */
+    }
+
+    .match-item:hover {
+      background-color: #f1f1f1; /* Hover effect for the match-item */
     }
 
     .match-info {
@@ -111,7 +117,8 @@
   </header>
 
   <ul class="matches-list">
-    <li class="match-item">
+    <!-- Match 1: Bangladesh vs India -->
+    <a href="bd-vs-ind.html" class="match-item">
       <div class="match-info">
         <img src="bd-flag.png" alt="Bangladesh Flag" class="flag">
         <img src="india-flag.png" alt="India Flag" class="flag">
@@ -120,10 +127,11 @@
           <p>Match starts in: <span id="countdown-bd-ind"></span></p>
         </div>
       </div>
-      <a href="bd-vs-ind.html" class="watch-link">Watch Now</a>
-    </li>
+      <span class="watch-link">Watch Now</span>
+    </a>
 
-    <li class="match-item">
+    <!-- Match 2: Pakistan vs Australia -->
+    <a href="pak-vs-aus.html" class="match-item">
       <div class="match-info">
         <img src="pak-flag.png" alt="Pakistan Flag" class="flag">
         <img src="aus-flag.png" alt="Australia Flag" class="flag">
@@ -132,10 +140,11 @@
           <p>Match starts in: <span id="countdown-pak-aus"></span></p>
         </div>
       </div>
-      <a href="pak-vs-aus.html" class="watch-link">Watch Now</a>
-    </li>
+      <span class="watch-link">Watch Now</span>
+    </a>
 
-    <li class="match-item">
+    <!-- Match 3: England vs New Zealand -->
+    <a href="matches/eng-vs-nz.html" class="match-item">
       <div class="match-info">
         <img src="eng-flag.png" alt="England Flag" class="flag">
         <img src="nz-flag.png" alt="New Zealand Flag" class="flag">
@@ -144,8 +153,8 @@
           <p>Match starts in: <span id="countdown-eng-nz"></span></p>
         </div>
       </div>
-      <a href="matches/eng-vs-nz.html" class="watch-link">Watch Now</a>
-    </li>
+      <span class="watch-link">Watch Now</span>
+    </a>
   </ul>
 
   <footer>
