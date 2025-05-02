@@ -129,4 +129,49 @@
         <div class="countdown">
           <p>Match starts in: <span id="countdown-pak-aus"></span></p>
         </div>
-        <a href="pak-vs-aus.html" class="watch-link">
+        <a href="pak-vs-aus.html" class="watch-link">Watch Now</a>
+      </div>
+    </div>
+
+    <div class="match">
+      <div class="match-info">
+        <img src="eng-flag.png" alt="England Flag" class="flag">
+        <img src="nz-flag.png" alt="New Zealand Flag" class="flag">
+        <h2>England vs New Zealand</h2>
+        <div class="countdown">
+          <p>Match starts in: <span id="countdown-eng-nz"></span></p>
+        </div>
+        <a href="matches/eng-vs-nz.html" class="watch-link">Watch Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sports TV Live. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Countdown for Bangladesh vs India
+    function startCountdown(id, time) {
+      const countDownDate = new Date(time).getTime();
+      const x = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countDownDate - now;
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById(id).innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById(id).innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    }
+
+    startCountdown("countdown-bd-ind", "2025-05-10T10:00:00");
+    startCountdown("countdown-pak-aus", "2025-05-11T15:00:00");
+    startCountdown("countdown-eng-nz", "2025-05-12T18:00:00");
+  </script>
+
+</body>
+</html>
