@@ -30,34 +30,28 @@
       font-size: 18px;
     }
 
-    .matches {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .matches-list {
+      list-style-type: none;
+      padding: 0;
       margin: 20px;
     }
 
-    .match {
+    .match-item {
       background-color: white;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin: 10px;
+      margin: 10px 0;
       padding: 20px;
-      width: 300px;
-      text-align: center;
+      text-align: left;
     }
 
-    .match-info {
-      padding: 20px;
-    }
-
-    .flag {
+    .match-item img {
       width: 50px;
       height: 30px;
       margin: 0 10px;
     }
 
-    h2 {
+    .match-item h2 {
       font-size: 24px;
       margin: 10px 0;
     }
@@ -94,9 +88,8 @@
 
     /* Responsive */
     @media (max-width: 768px) {
-      .matches {
-        flex-direction: column;
-        align-items: center;
+      .matches-list {
+        margin: 10px;
       }
     }
   </style>
@@ -108,8 +101,8 @@
     <p>Watch live sports streams of ongoing matches!</p>
   </header>
 
-  <section class="matches">
-    <div class="match">
+  <ul class="matches-list">
+    <li class="match-item">
       <div class="match-info">
         <img src="bd-flag.png" alt="Bangladesh Flag" class="flag">
         <img src="india-flag.png" alt="India Flag" class="flag">
@@ -119,9 +112,9 @@
         </div>
         <a href="bd-vs-ind.html" class="watch-link">Watch Now</a>
       </div>
-    </div>
+    </li>
 
-    <div class="match">
+    <li class="match-item">
       <div class="match-info">
         <img src="pak-flag.png" alt="Pakistan Flag" class="flag">
         <img src="aus-flag.png" alt="Australia Flag" class="flag">
@@ -131,9 +124,9 @@
         </div>
         <a href="pak-vs-aus.html" class="watch-link">Watch Now</a>
       </div>
-    </div>
+    </li>
 
-    <div class="match">
+    <li class="match-item">
       <div class="match-info">
         <img src="eng-flag.png" alt="England Flag" class="flag">
         <img src="nz-flag.png" alt="New Zealand Flag" class="flag">
@@ -143,8 +136,8 @@
         </div>
         <a href="matches/eng-vs-nz.html" class="watch-link">Watch Now</a>
       </div>
-    </div>
-  </section>
+    </li>
+  </ul>
 
   <footer>
     <p>&copy; 2025 Sports TV Live. All rights reserved.</p>
