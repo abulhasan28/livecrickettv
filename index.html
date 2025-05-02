@@ -42,18 +42,27 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin: 10px 0;
       padding: 20px;
-      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .match-item img {
+    .match-info {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .match-info img {
       width: 50px;
       height: 30px;
       margin: 0 10px;
     }
 
-    .match-item h2 {
-      font-size: 24px;
-      margin: 10px 0;
+    .match-info h2 {
+      font-size: 20px;
+      margin: 0 10px;
+      flex-grow: 1;
     }
 
     .countdown {
@@ -64,7 +73,7 @@
     .watch-link {
       display: inline-block;
       padding: 10px 20px;
-      margin-top: 20px;
+      margin-left: 10px;
       background-color: #007bff;
       color: white;
       text-decoration: none;
@@ -110,8 +119,8 @@
         <div class="countdown">
           <p>Match starts in: <span id="countdown-bd-ind"></span></p>
         </div>
-        <a href="bd-vs-ind.html" class="watch-link">Watch Now</a>
       </div>
+      <a href="bd-vs-ind.html" class="watch-link">Watch Now</a>
     </li>
 
     <li class="match-item">
@@ -122,8 +131,8 @@
         <div class="countdown">
           <p>Match starts in: <span id="countdown-pak-aus"></span></p>
         </div>
-        <a href="pak-vs-aus.html" class="watch-link">Watch Now</a>
       </div>
+      <a href="pak-vs-aus.html" class="watch-link">Watch Now</a>
     </li>
 
     <li class="match-item">
@@ -134,8 +143,8 @@
         <div class="countdown">
           <p>Match starts in: <span id="countdown-eng-nz"></span></p>
         </div>
-        <a href="matches/eng-vs-nz.html" class="watch-link">Watch Now</a>
       </div>
+      <a href="matches/eng-vs-nz.html" class="watch-link">Watch Now</a>
     </li>
   </ul>
 
