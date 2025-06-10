@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Live Match</title>
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background: black;
+      background-color: #000;
+      color: #fff;
     }
-    .player-container {
-      position: fixed;
-      top: 0;
-      left: 0;
+    .video-wrapper {
+      position: relative;
       width: 100vw;
       height: 100vh;
-      z-index: 9999;
+      overflow: hidden;
     }
     iframe {
       width: 100%;
@@ -31,9 +26,11 @@
 </head>
 <body>
 
-<div class="player-container">
-  <iframe src="https://me.webcric.com/frame5.htm" allowfullscreen></iframe>
-</div>
+  <div class="video-wrapper">
+    <!-- এখানে আপনার লাইভ লিংক দিন -->
+    <iframe src="https://me.webcric.com/frame5.htm" allow="fullscreen; encrypted-media" allowfullscreen></iframe>
+  </div>
 
 </body>
 </html>
+
